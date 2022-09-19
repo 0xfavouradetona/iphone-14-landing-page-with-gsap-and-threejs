@@ -17,7 +17,7 @@ export function Model(props) {
 
   let camera = useThree(state => state.camera);
   let scene = useThree(state => state.scene);
-
+  camera.position.set(1,0,0);
   useLayoutEffect(() => {
   console.log(camera);
     let t1 = gsap.timeline({
